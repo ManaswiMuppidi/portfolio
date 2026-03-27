@@ -1,0 +1,39 @@
+/* =========================================
+   ANIMATIONS (Gravity / Floating)
+========================================= */
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+}
+@keyframes floatDelayed {
+    0% { transform: translateY(-8px); }
+    50% { transform: translateY(8px); }
+    100% { transform: translateY(-8px); }
+}
+@keyframes floatSlow {
+    0% { transform: translateY(0px) translateX(0px); }
+    50% { transform: translateY(-10px) translateX(5px); }
+    100% { transform: translateY(0px) translateX(0px); }
+}
+@keyframes rotateRing {
+    from { transform: translate(-50%, -50%) rotateX(75deg) rotateZ(0deg); }
+    to { transform: translate(-50%, -50%) rotateX(75deg) rotateZ(360deg); }
+}
+@keyframes rotateRingReverse {
+    from { transform: translate(-50%, -50%) rotateX(60deg) rotateZ(360deg); }
+    to { transform: translate(-50%, -50%) rotateX(60deg) rotateZ(0deg); }
+}
+@keyframes drift {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(50px, -50px); }
+}
+@keyframes progressGlow {
+    from { box-shadow: 0 0 5px currentColor; }
+    to { box-shadow: 0 0 15px currentColor, 0 0 5px #fff; }
+}
+@keyframes barGrow {
+    from { transform: scaleY(0); transform-origin: bottom; }
+    to { transform: scaleY(1); transform-origin: bottom; }
+}
