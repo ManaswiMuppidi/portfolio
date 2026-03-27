@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manaswi Muppidi - Aspiring Data Analyst</title>
+    <meta name="description"
+        content="Portfolio of Manaswi Muppidi - Transforming raw data into meaningful insights and smart decisions.">
+    <!-- Google Fonts: Orbitron for tech/display, Inter for clean body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Orbitron:wght@500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <!-- Leaflet JS for Interactive Map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+</head>
+
+<body class="dark-space">
+
+    <!-- Anti-Gravity Background Elements -->
+    <div id="particle-container"></div>
+    <div class="holo-ring holo-ring-1"></div>
+    <div class="holo-ring holo-ring-2"></div>
+    <div class="glowing-orb orb-purple"></div>
+    <div class="glowing-orb orb-cyan"></div>
+    <div class="glowing-orb orb-blue"></div>
+
+    <!-- Navigation -->
+    <nav class="glass-nav float-animate-slow">
+        <div class="logo">MM</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact" class="neon-btn-small">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-content glass-card float-animate">
+            <div class="profile-wrapper float-animate-slow">
+                <img src="assets/profile.jpg" alt="Manaswi Muppidi" class="profile-img">
+            </div>
+            <h2 class="greeting">Hello, I'm...</h2>
+            <h1 class="glitch-text" data-text="Manaswi Muppidi">Manaswi Muppidi</h1>
+            <h3 class="role typing-text">Aspiring Data Analyst</h3>
+            <p class="tagline">“Transforming raw data into meaningful insights and smart decisions.”</p>
+            <div class="hero-actions">
+                <a href="#projects" class="neon-btn primary-btn">
+                    <i class="fas fa-chart-line"></i> View Projects
+                </a>
+                <a href="#contact" class="neon-btn secondary-btn">
+                    <i class="fas fa-envelope"></i> Contact Me
+                </a>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2 class="section-title glow-text">About</h2>
+        <div class="about-container">
+            <div class="glass-card about-card float-animate-slow">
+                <div class="about-content">
+                    <div class="about-icon">
+                        <i class="fas fa-user-astronaut"></i>
+                    </div>
+                    <div class="about-text">
+                        <p>I am a passionate <strong>Data Analyst student</strong> driven by curiosity and logic.</p>
+                        <p>Strong in Python and problem-solving, I specialize in data cleaning and visualization.
+                            Currently expanding my knowledge in C, C++, Java, and Data Structures & Algorithms.</p>
+                        <p><strong>Primary Directive:</strong> To become a professional Data Analyst and solve
+                            real-world problems using clean, structured data.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2 class="section-title glow-text">Skills</h2>
+        <div class="skills-grid">
+
+            <div class="glass-card skill-category float-animate">
+                <h3><i class="fas fa-code"></i> Programming</h3>
+                <div class="skills-badge-container">
+                    <div class="skill-badge badge-blue"><i class="fab fa-python"></i> <span>Python</span></div>
+                    <div class="skill-badge badge-cyan"><i class="fas fa-file-code"></i> <span>C++</span></div>
+                    <div class="skill-badge badge-purple"><i class="fas fa-code"></i> <span>C</span></div>
+                    <div class="skill-badge badge-blue"><i class="fab fa-java"></i> <span>Java</span></div>
+                </div>
+            </div>
+
+            <div class="glass-card skill-category float-animate-delayed">
+                <h3><i class="fas fa-tools"></i> Tools</h3>
+                <div class="skills-badge-container">
+                    <div class="skill-badge badge-cyan"><i class="fas fa-file-excel"></i> <span>Excel</span></div>
+                    <div class="skill-badge badge-purple"><i class="fas fa-chart-bar"></i> <span>Power BI</span></div>
+                    <div class="skill-badge badge-blue"><i class="fas fa-database"></i> <span>SQL (Basic)</span></div>
+                </div>
+            </div>
+
+            <div class="glass-card skill-category float-animate-slow">
+                <h3><i class="fas fa-brain"></i> Core Skills</h3>
+                <div class="skills-badge-container">
+                    <div class="skill-badge badge-cyan"><i class="fas fa-broom"></i> <span>Data Cleaning</span></div>
+                    <div class="skill-badge badge-purple"><i class="fas fa-chart-line"></i> <span>Data
+                            Visualization</span></div>
+                    <div class="skill-badge badge-blue"><i class="fas fa-chart-pie"></i> <span>Data Analysis</span>
+                    </div>
+                    <div class="skill-badge badge-cyan"><i class="fas fa-lightbulb"></i> <span>Problem Solving</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2 class="section-title glow-text">Projects</h2>
+        <div class="projects-grid">
+
+            <!-- Project 1 -->
+            <div class="glass-card project-card float-animate">
+                <div class="project-header">
+                    <h3>Employee Management System</h3>
+                    <div class="tech-stack">
+                        <span>C++</span><span>OOP</span><span>File Handling</span>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <p>Built a console-based Employee Management System using Object-Oriented Programming to manage
+                        multiple employee types efficiently.</p>
+                    <ul class="features">
+                        <li>Add, update, delete, search records</li>
+                        <li>Inheritance & polymorphism</li>
+                        <li>File-based data storage</li>
+                    </ul>
+                    <div class="outcome"><strong>Outcome:</strong> Strong OOP and logic-building.</div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="glass-card project-card float-animate-delayed">
+                <div class="project-header">
+                    <h3>Air Pollution Data Analysis</h3>
+                    <div class="tech-stack">
+                        <span>Python</span><span>Pandas</span><span>Seaborn</span>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <p>Exploratory data analysis to identify trends, patterns, and anomalies in air pollution data.</p>
+                    <ul class="features">
+                        <li>Data cleaning and preprocessing</li>
+                        <li>Charts and heatmaps visualizations</li>
+                        <li>Trend analysis</li>
+                    </ul>
+                    <div class="outcome"><strong>Outcome:</strong> Identified patterns & high-risk periods.</div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="glass-card project-card float-animate-slow">
+                <div class="project-header">
+                    <h3>E-Commerce Sales Prediction</h3>
+                    <div class="tech-stack">
+                        <span>Python</span><span>Scikit-learn</span><span>ML</span>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <p>Analyzed e-commerce data and built ML models to predict sales and classify performance.</p>
+                    <ul class="features">
+                        <li>Data preprocessing</li>
+                        <li>Regression & classification models</li>
+                        <li>Trend visualization</li>
+                    </ul>
+                    <div class="outcome"><strong>Outcome:</strong> Predicted sales & key drivers.</div>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="glass-card project-card float-animate">
+                <div class="project-header">
+                    <h3>Weather Data Dashboard</h3>
+                    <div class="tech-stack">
+                        <span>Power BI</span><span>Data Viz</span>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <p>Interactive dashboard to analyze weather trends and environmental conditions.</p>
+                    <ul class="features">
+                        <li>KPI metrics tracking</li>
+                        <li>Interactive filters</li>
+                        <li>Line and bar charts</li>
+                    </ul>
+                    <div class="outcome"><strong>Outcome:</strong> Insights on seasonal patterns.</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Dashboard Section -->
+    <section id="dashboard" class="section">
+        <h2 class="section-title glow-text">Dashboard</h2>
+
+        <div class="dashboard-btn-container">
+            <a href="https://app.powerbi.com/groups/me/reports/c95dbfaf-1dde-4652-84f4-878f93392fac/39ef12e3ef8b91163004?experience=power-bi"
+                target="_blank" class="dashboard-btn float-animate">
+                <i class="fas fa-chart-line"></i> View Live Dashboard
+            </a>
+        </div>
+
+        <div class="pbi-dashboard-wrapper float-animate-slow">
+            <!-- Top Header -->
+            <div class="pbi-header">
+                <h3 class="pbi-title">Weather Data Analysis and Visualization Dashboard <i
+                        class="fas fa-info-circle"></i></h3>
+                <div class="pbi-kpi-row">
+                    <div class="pbi-kpi">
+                        <div class="pbi-kpi-val">56.09</div>
+                        <div class="pbi-kpi-label">Average of Temperature</div>
+                    </div>
+                    <div class="pbi-kpi">
+                        <div class="pbi-kpi-val">100</div>
+                        <div class="pbi-kpi-label">Max of Temperature</div>
+                    </div>
+                    <div class="pbi-kpi">
+                        <div class="pbi-kpi-val">-27</div>
+                        <div class="pbi-kpi-label">Min of Temperature</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Grid -->
+            <div class="pbi-main-grid">
+                <!-- Far Left -->
+                <div class="pbi-col pbi-col-left">
+                    <div class="pbi-panel">
+                        <h4>Average of Temperature by Station.State</h4>
+                        <div class="pbi-bar-chart">
+                            <div class="pbi-bars">
+                                <div class="pbi-bar" style="height: 80%"></div>
+                                <div class="pbi-bar" style="height: 75%"></div>
+                                <div class="pbi-bar" style="height: 70%"></div>
+                                <div class="pbi-bar" style="height: 65%"></div>
+                                <div class="pbi-bar" style="height: 60%"></div>
+                                <div class="pbi-bar" style="height: 55%"></div>
+                                <div class="pbi-bar" style="height: 50%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pbi-panel">
+                        <h4>Max of Temperature by Month</h4>
+                        <div class="pbi-line-chart">
+                            <svg viewBox="0 0 100 50">
+                                <path d="M0 45 L10 45 L20 40 L30 35 L40 5 L50 25 L60 30 L70 35 L80 45 L90 45 L100 45"
+                                    fill="none" stroke="var(--neon-cyan)" stroke-width="1.5" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Center -->
+                <div class="pbi-col pbi-col-center" style="display: flex; flex-direction: column;">
+                    <div class="pbi-panel">
+                        <h4>Average of Wind Speed by Station.City</h4>
+                        <div class="pbi-donut-chart" style="margin-top: 10px;">
+                            <div class="donut-hollow"></div>
+                        </div>
+                    </div>
+                    <div class="pbi-panel pbi-map-panel" style="flex: 1;">
+                        <h4>Station.State and Temperature</h4>
+                        <div id="interactive-map" style="height: 100%; width: 100%; border-radius: 8px; z-index: 1;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Middle -->
+                <div class="pbi-col pbi-col-right-mid">
+                    <div class="pbi-panel">
+                        <h4>Max of Wind Speed</h4>
+                        <div class="pbi-gauge-chart">
+                            <div class="gauge-arc"></div>
+                            <div class="gauge-val">61.10</div>
+                        </div>
+                    </div>
+                    <div class="pbi-panel pbi-funnel-panel">
+                        <h4>Average of Wind Speed by Station.State</h4>
+                        <div class="pbi-funnel">
+                            <div class="funnel-row" style="width: 100%"><span class="fl">New Hamp...</span><span
+                                    class="fr">18.02</span></div>
+                            <div class="funnel-row" style="width: 80%"><span class="fl">Hawaii</span><span
+                                    class="fr">8.97</span></div>
+                            <div class="funnel-row" style="width: 70%"><span class="fl">Texas</span><span
+                                    class="fr">7.73</span></div>
+                            <div class="funnel-row" style="width: 65%"><span class="fl">Wyoming</span><span
+                                    class="fr">7.46</span></div>
+                            <div class="funnel-row" style="width: 55%"><span class="fl">Montana</span><span
+                                    class="fr">6.46</span></div>
+                            <div class="funnel-row" style="width: 50%"><span class="fl">Alaska</span><span
+                                    class="fr">6.43</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Far Right: Slicers -->
+                <div class="pbi-col pbi-col-filters">
+                    <div class="pbi-panel pbi-slicer-panel">
+                        <div class="slicer-header">Year</div>
+                        <div class="slicer-grid">
+                            <div class="slicer-pill active-pill">2016</div>
+                            <div class="slicer-pill">2017</div>
+                        </div>
+                        <div class="slicer-header">Station.State</div>
+                        <div class="slicer-grid slicer-scroll">
+                            <div class="slicer-pill">Alabama</div>
+                            <div class="slicer-pill">Alaska</div>
+                            <div class="slicer-pill active-pill">California</div>
+                            <div class="slicer-pill">Colorado</div>
+                            <div class="slicer-pill">Florida</div>
+                            <div class="slicer-pill">Georgia</div>
+                            <div class="slicer-pill">Hawaii</div>
+                            <div class="slicer-pill">Idaho</div>
+                            <div class="slicer-pill">Illinois</div>
+                            <div class="slicer-pill">Indiana</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume & Certifications Section -->
+    <section id="resume" class="section">
+        <h2 class="section-title glow-text">Resume</h2>
+        <div class="resume-container">
+            <div class="glass-card resume-card float-animate">
+                <div class="resume-header">
+                    <h3>Curriculum Vitae</h3>
+                    <a href="assets/resume.pdf" download class="neon-btn-small"><i class="fas fa-download"></i> Download
+                        PDF</a>
+                </div>
+
+                <div class="resume-layout">
+                    <!-- Resume Image Preview Column -->
+                    <div class="resume-preview">
+                        <!-- Please save your resume photo as assets/resume.png or link it here -->
+                        <img src="assets/resume.png" alt="Resume Preview" class="resume-img"
+                            onerror="this.parentElement.style.display='none'">
+                    </div>
+
+                    <!-- Resume Text Column -->
+                    <div class="resume-body">
+                        <div class="resume-section">
+                            <h4><i class="fas fa-bullseye"></i> Career Objective</h4>
+                            <p>To become a professional Data Analyst and use data to solve real-world problems with
+                                meaningful insights.</p>
+                        </div>
+                        <div class="resume-section">
+                            <h4><i class="fas fa-graduation-cap"></i> Education</h4>
+                            <p><strong>Student</strong> - Actively pursuing studies to build a strong foundation in Data
+                                Analytics, Computer Science, and Algorithms.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+        <h2 class="section-title glow-text">Certifications</h2>
+        <div class="certifications-grid">
+            <div class="glass-card cert-card float-animate">
+                <div class="cert-details">
+                    <h3 class="cert-title">Infosys Learning Microsoft Power BI</h3>
+                    <p class="cert-platform">Infosys / springboard</p>
+                    <p class="cert-date">Completed on 30 December 2025</p>
+                    <a href="assets/infosys.pdf" target="_blank" rel="noopener noreferrer"
+                        class="neon-btn-small cert-btn"><i class="fas fa-external-link-alt"></i> View Certificate</a>
+                </div>
+            </div>
+
+            <div class="glass-card cert-card float-animate" style="animation-delay: 0.2s;">
+                <div class="cert-details">
+                    <h3 class="cert-title">Object Oriented Programming using C++</h3>
+                    <p class="cert-platform">Lovely Professional University</p>
+                    <p class="cert-date">completed on 16 July 2025</p>
+                    <a href="assets/lpu.pdf" target="_blank" rel="noopener noreferrer"
+                        class="neon-btn-small cert-btn"><i class="fas fa-external-link-alt"></i> View Certificate</a>
+                </div>
+            </div>
+
+            <div class="glass-card cert-card float-animate" style="animation-delay: 0.4s;">
+                <div class="cert-details">
+                    <h3 class="cert-title">Build a Thon Hackathon</h3>
+                    <p class="cert-platform">APNA College LPU</p>
+                    <p class="cert-date">completed on 16 April 2024</p>
+                    <a href="assets/hackathon.pdf" target="_blank" rel="noopener noreferrer"
+                        class="neon-btn-small cert-btn"><i class="fas fa-external-link-alt"></i> View Certificate</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2 class="section-title glow-text">Contact</h2>
+        <div class="contact-container">
+            <div class="glass-card contact-info float-animate-slow">
+                <h3>Contact Me</h3>
+                <div class="info-item">
+                    <i class="fas fa-user"></i>
+                    <span>+91 7893281403</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>manaswimuppidi@gmail.com</span>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/muppidi-manaswi-368019236/" target="_blank"
+                        rel="noopener noreferrer" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/ManaswiMuppidi" target="_blank" rel="noopener noreferrer"
+                        class="social-icon"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+
+            <form id="contactForm" action="https://formspree.io/f/xjgpggdd" method="POST"
+                class="glass-card contact-form float-animate">
+                <input type="hidden" name="_subject" value="New Data Signal from Portfolio">
+                <div class="input-group">
+                    <label>Name</label>
+                    <input type="text" name="name" id="userName" placeholder="System ID / Name" required>
+                </div>
+                <div class="input-group">
+                    <label>Email Address</label>
+                    <input type="email" name="email" id="userEmail" placeholder="Return signal endpoint..." required>
+                </div>
+                <div class="input-group">
+                    <label>Message</label>
+                    <textarea name="message" id="userMessage" placeholder="Write your message payload..."
+                        required></textarea>
+                </div>
+                <button type="submit" id="submitBtn" class="neon-btn primary-btn submit-btn">
+                    <i class="fas fa-paper-plane"></i> <span>Send Message</span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">MM</div>
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#dashboard">Dashboard</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/muppidi-manaswi-368019236/" target="_blank"
+                    rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/ManaswiMuppidi" target="_blank" rel="noopener noreferrer"><i
+                        class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2026 Manaswi Muppidi. All systems nominal.
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
